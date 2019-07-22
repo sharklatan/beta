@@ -1,0 +1,88 @@
+<div class="navbar" xmlns:content="http://www.w3.org/1999/xhtml" xmlns:content="http://www.w3.org/1999/xhtml">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a>
+        </div>
+        <div class="center sliding">detail</div>
+        <div class="right">
+            <!-- Right link contains only icon - additional "icon-only" class-->
+            <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <!-- Page, data-page contains page name-->
+    <div data-page="detail" class="page">
+        <!-- Scrollable page content-->
+        <div class="page-content">
+            <div class="content-block">
+
+                <div class="card app-card">
+                    <div class="card-header">
+                        <div class="app-card-avatar"><img width="40" height="40" id="avatar"></div>
+                        <div class="app-card-button"><a id="downloadLink" class="button button-fill button-round external install" style="background: #F0F1F6; color: #007AFF; font-weight:bold;" onclick=appDownload()>GET</a>
+                        </div>
+                        <div class="app-card-name" nowrap><strong id="name"></strong>
+
+                        </div>
+
+                        <div class="app-card-subtitle" id="subtitle"></div>
+
+                    </div>
+                    <div class="card-content" id="preview-content">
+                        <div class="card-content-inner">
+                            <p style="margin-left: 30px"><strong>Preview</strong></p>
+                            <center>
+                                <img style="border-radius:9px; max-width:414px;" width="100%" id="preview" onerror="document.getElementById('preview-content').style.display='none'" />
+                            </center>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <p style="margin-left: 30px"><strong>Description</strong></p>
+                            <p style="margin-left: 20px" id="Describtion"></p>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="list-block">
+                                <ul>
+                                    <li class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title">Developer</div>
+                                            <div class="app-item-after" id="Developer"></div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title">Version</div>
+                                            <div class="app-item-after" id="Version"></div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title">Category</div>
+                                            <div class="app-item-after" id="Category"></div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title">Size</div>
+                                            <div class="app-item-after" id="Size"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

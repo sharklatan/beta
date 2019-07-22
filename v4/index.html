@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <script type=application/javascript src=//ced.sascdn.com/tag/3048/smart.js async></script>
+    <script type=text/javascript>
+        _atrk_opts = {
+            atrk_acct: "5ivos1zDGU20kU",
+            domain: "tweakboxapp.com",
+            dynamic: true
+        };
+        (function() {
+            var as = document.createElement('script');
+            as.type = 'text/javascript';
+            as.async = true;
+            as.src = "https://certify-js.alexametrics.com/atrk.js";
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(as, s);
+        })();
+    </script><noscript><img src="https://certify.alexametrics.com/atrk.gif?account=5ivos1zDGU20kU" style=display:none height=1 width=1 alt=""></noscript>
+    <script type=text/javascript async=true>
+        var elem = document.createElement('script');
+
+        elem.src = 'https://quantcast.mgr.consensu.org/cmp.js';
+
+        elem.async = true;
+
+        elem.type = "text/javascript";
+
+        var scpt = document.getElementsByTagName('script')[0];
+
+        scpt.parentNode.insertBefore(elem, scpt);
+
+        (function() {
+
+            var gdprAppliesGlobally = true;
+
+            function addFrame() {
+
+                if (!window.frames['__cmpLocator']) {
+
+                    if (document.body) {
+
+                        var body = document.body,
+
+                            iframe = document.createElement('iframe');
+
+                        iframe.style = 'display:none';
+
+                        iframe.name = '__cmpLocator';
+
+                        body.appendChild(iframe);
+
+                    } else {
+
+                        // In the case where this stub is located in the head,
+
+                        // this allows us to inject the iframe more quickly than
+
+                        // relying on DOMContentLoaded or other events.
+
+                        setTimeout(addFrame, 5);
+
+                    }
+
+                }
+
+            }
+
+            addFrame();
+
+            function cmpMsgHandler(event) {
+
+                var msgIsString = typeof event.data === "string";
+
+                var json;
+
+                if (msgIsString) {
+
+                    json = event.data.indexOf("__cmpCall") != -1 ? JSON.parse(event.data) : {};
+
+                } else {
+
+                    json = event.data;
+
+                }
+
+                if (json.__cmpCall) {
+
+                    var i = json.__cmpCall;
+
+                    window.__cmp(i.command, i.parameter, function(retValue, success) {
+
+                        var returnMsg = {
+                            "__cmpReturn": {
+
+                                "returnValue": retValue,
+
+                                "success": success,
+
+                                "callId": i.callId
+
+                            }
+                        };
+
+                        event.source.postMessage(msgIsString ?
+
+                            JSON.stringify(returnMsg) : returnMsg, '*');
+
+                    });
+
+                }
+
+            }
+
+            window.__cmp = function(c) {
+
+                var b = arguments;
+
+                if (!b.length) {
+
+                    return __cmp.a;
+
+                } else if (b[0] === 'ping') {
+
+                    b[2]({
+                        "gdprAppliesGlobally": gdprAppliesGlobally,
+
+                        "cmpLoaded": false
+                    }, true);
+
+                } else if (c == '__cmp')
+
+                    return false;
+
+                else {
+
+                    if (typeof __cmp.a === 'undefined') {
+
+                        __cmp.a = [];
+
+                    }
+
+                    __cmp.a.push([].slice.apply(b));
+
+                }
+
+            }
+
+            window.__cmp.gdprAppliesGlobally = gdprAppliesGlobally;
+
+            window.__cmp.msgHandler = cmpMsgHandler;
+
+            if (window.addEventListener) {
+
+                window.addEventListener('message', cmpMsgHandler, false);
+
+            } else {
+
+                window.attachEvent('onmessage', cmpMsgHandler);
+
+            }
+
+        })();
+
+        window.__cmp('init', {
+
+            'Language': 'en',
+            'Initial Screen Reject Button Text': 'I do not accept',
+            'Initial Screen Accept Button Text': 'I accept',
+            'Purpose Screen Header Title Text': 'Privacy settings',
+            'Purpose Screen Body Text': 'You can set your consent preferences and determine how you want your data to be used based on the purposes below. You may set your preferences for us independently from those of third-party partners. Each purpose has a description so that you know how we and partners use your data.',
+            'Vendor Screen Body Text': 'You can set consent preferences for each individual third-party company below. Expand each company list item to see what purposes they use data for to help make your choices. In some cases, companies may disclose that they use your data without asking for your consent, based on their legitimate interests. You can click on their privacy policies for more information and to opt out.',
+            'Vendor Screen Accept All Button Text': 'Accept all',
+            'Vendor Screen Reject All Button Text': 'Reject all',
+            'Initial Screen Body Text': 'We and our partners use technology such as cookies on our site to personalise content and ads, provide social media features, and analyse our traffic. Click below to consent to the use of this technology across the web. You can change your mind and change your consent choices at anytime by returning to this site.',
+            'Initial Screen Body Text Option': 1,
+            'Publisher Name': 'TweakBox',
+            'Publisher Logo': 'https://img.tweakbox.pro/icons/tweakbox-round.png',
+            'Min Days Between UI Displays': 15,
+
+            'Initial Screen Body Text Option': 1,
+
+            'Publisher Purpose IDs': [1, 2, 3, 4, 5],
+
+            'UI Layout': 'popup',
+
+            'No Option': false,
+
+            'Consent Scope': 'service',
+
+            'Default Value for Toggles': 'on',
+
+        });
+    </script>
+    <style>
+        .qc-cmp-button {
+            background-color: #000000 !important;
+            border-color: #000000 !important;
+        }
+        
+        .qc-cmp-button:hover {
+            background-color: transparent !important;
+            border-color: #000000 !important;
+        }
+        
+        .qc-cmp-alt-action,
+        .qc-cmp-link {
+            color: #000000 !important;
+        }
+        
+        .qc-cmp-button {
+            color: #ffffff !important;
+        }
+        
+        .qc-cmp-publisher-logo {
+            height: 72px!important;
+            width: 72px!important;
+            max-height: 999px!important;
+            max-width: 999px!important;
+            border-radius: 25%!important;
+        }
+        
+        .qc-cmp-ui,
+        .qc-cmp-ui .qc-cmp-main-messaging,
+        .qc-cmp-ui .qc-cmp-messaging,
+        .qc-cmp-ui .qc-cmp-beta-messaging,
+        .qc-cmp-ui .qc-cmp-title,
+        .qc-cmp-ui .qc-cmp-sub-title,
+        .qc-cmp-ui .qc-cmp-purpose-info,
+        .qc-cmp-ui .qc-cmp-table,
+        .qc-cmp-ui .qc-cmp-table-header,
+        .qc-cmp-ui .qc-cmp-vendor-list,
+        .qc-cmp-ui .qc-cmp-vendor-list-title {
+            color: #000000 !important;
+        }
+        
+        .qc-cmp-ui {
+            background-color: #E1E1E1 !important;
+        }
+        
+        .qc-cmp-publisher-purposes-table .qc-cmp-table-header {
+            background-color: #fafafa !important;
+        }
+        
+        .qc-cmp-publisher-purposes-table .qc-cmp-table-row {
+            background-color: #ffffff !important;
+        }
+    </style>
+    <link href=static/css/app.af11699d8214dd9fcce7c6c03cf1c5d0.css rel=stylesheet>
+</head>
+<script type=application/javascript>
+    var sas = sas || {};
+    sas.cmd = sas.cmd || [];
+    sas.cmd.push(function() {
+        sas.setup({
+            networkid: 3048,
+            domain: "//www8.smartadserver.com",
+            async: true
+        });
+    });
+    sas.cmd.push(function() {
+        sas.call("onecall", {
+            siteId: 266090,
+            pageId: 998653,
+            formats: [{
+                id: 70043
+            }],
+            target: ''
+        });
+    });
+</script>
+
+<body class="theme-dark color-red">
+    <div id=app></div>
+    <script src=https://d2wy8f7a9ursnm.cloudfront.net/bugsnag-3.min.js data-apikey=8e0feca488b6068b4ceda97d8736e777></script>
+    <script type=text/javascript async=true>
+        function updConsent() {
+
+            window.__cmp('displayConsentUi');
+
+        }
+    </script><a id=myLink href=# onclick=updConsent();>Update CMP</a>
+    <div id=sas_70043></div>
+    <script type=application/javascript>
+        sas.cmd.push(function() {
+            sas.render("70043");
+        });
+    </script>
+    <script type=text/javascript src=static/js/manifest.37a2ecbb1d1b7e6c9ada.js></script>
+    <script type=text/javascript src=static/js/vendor.bfa131a6bd42f83dbcf5.js></script>
+    <script type=text/javascript src=static/js/app.fe6cbfc493db7e60b1ab.js></script>
+</body>
+
+</html>

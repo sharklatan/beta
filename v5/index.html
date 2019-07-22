@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Download Apps</title>
+    <!-- Path to Framework7 Library CSS-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-');
+    </script>
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+    <link rel="stylesheet" href="css/iphonex.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-",
+            enable_page_level_ads: true
+        });
+    </script>
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+
+    <!-- Views, and they are tabs-->
+    <!-- We need to set "toolbar-through" class on it to keep space for our tab bar-->
+    <div class="views tabs toolbar-through">
+
+        <!-- Your first view, it is also a .tab and should have "active" class to make it visible by default-->
+        <div id="view-1" class="view tab view-main active" data-page="index-1">
+            <!-- Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="center sliding" style="left: 642.5px;">Top</div>
+                </div>
+            </div>
+            <!-- Pages-->
+            <div class="pages navbar-through">
+                <!-- Page, data-page contains page name-->
+                <div data-page="index-1" class="page">
+                    <!-- Scrollable page content-->
+                    <div class="page-content">
+                        <!-- Title-->
+                        <div class="content-block-title">
+                            <h1>TopApps</h1>
+                        </div>
+                        <!-- Swiper-->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <a class="swiper-slide" href="detail.html?id=121032646">
+                                    <img data-src="https://topstore.vip/slide/gta.jpg" class="swiper-lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                                <a class="swiper-slide" href="detail.html?id=1021215459">
+                                    <img data-src="https://topstore.vip/slide/1021215459.jpg" class="swiper-lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                                <a class="swiper-slide" href="detail.html?id=929155156">
+                                    <img data-src="https://topstore.vip/slide/929155156.png" class="swiper-lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                                <a class="swiper-slide" href="detail.html?id=1009134042">
+                                    <img data-src="https://topstore.vip/slide/1009134042.jpg" class="swiper-lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                            </div>
+                            <div class="swiper-pagination color-white"></div>
+                        </div>
+                        <div class="content-block">
+                            <p>
+                                <div style="text-align:center; margin-top:-18px;">
+                                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                                    <!-- 下载页广告 -->
+                                    <ins class="adsbygoogle" style="display:inline-block;width:350px;height:90px" data-ad-client="ca-pub-" data-ad-slot="7569482265"></ins>
+                                    <script>
+                                        (adsbygoogle = window.adsbygoogle || []).push({});
+                                    </script>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="content-block-title">
+                            <h2>TopApps</h2>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">TopApps:</div>
+                            <div class="card-content lazy lazy-fadeIn">
+                                <div class="list-block media-list">
+                                    <ul id="TopApps">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="content-block-title">
+                            <h2>Recommended</h2>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Recommended:</div>
+
+                            <div class="card-content lazy lazy-fadeIn">
+                                <div class="list-block media-list">
+                                    <ul id="RecommendedThisWeek">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <br>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Second view (for second wrap)-->
+        <div id="view-2" class="view tab" data-page="index-2">
+            <!-- We can make with view with navigation, let's add Top Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="center sliding" style="left: 642.5px;">Apps</div>
+                </div>
+            </div>
+            <div class="pages navbar-through">
+                <div data-page="index-2" class="page">
+                    <div class="page-content">
+                        <div class="content-block-title">
+                            <h1>Apps</h1>
+                        </div>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <a class="swiper-slide external" href="https://www.youtube.com/DinoZambas2">
+                                    <img data-src="https://topstore.vip/slide/youtube.jpg" class="swiper-lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                                <a class="swiper-slide" href="detail.html?id=1015144116">
+                                    <img data-src="https://topstore.vip/slide/1015144116.jpg" class="swiper-lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                            </div>
+                            <div class="swiper-pagination color-white"></div>
+                        </div>
+                        <div class="content-block">
+                            <p>
+                                <div style="text-align:center; margin-top:-18px;">
+                                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                                    <!-- 下载页广告 -->
+                                    <ins class="adsbygoogle" style="display:inline-block;width:350px;height:90px" data-ad-client="ca-pub-" data-ad-slot="7569482265"></ins>
+                                    <script>
+                                        (adsbygoogle = window.adsbygoogle || []).push({});
+                                    </script>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="content-block-title">
+                            <h2>Movies on iOS</h2>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Movies on iOS:</div>
+                            <div class="card-content lazy lazy-fadeIn">
+                                <div class="list-block media-list">
+                                    <ul id="MoviesOnIOS">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <span></span>
+                                <a href="type.html?type=Movies on iOS" style="margin-right: 20px;">more...</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="content-block-title">
+                            <h2>Tweaked Apps</h2>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Tweaked Apps:</div>
+                            <div class="card-content lazy lazy-fadeIn">
+                                <div class="list-block media-list">
+                                    <ul id="TweakedApps">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <span></span>
+                                <a href="type.html?type=Tweaked Apps" style="margin-right: 20px;">more...</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="content-block-title">
+                            <h2>Paid And Other Apps</h2>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Paid And Other Apps:</div>
+                            <div class="card-content lazy lazy-fadeIn">
+                                <div class="list-block media-list">
+                                    <ul id="PaidAndOtherApps">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <span></span>
+                                <a href="type.html?type=Paid And Other Apps" style="margin-right: 20px;">more...</a>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <hr>
+
+                </div>
+            </div>
+        </div>
+        <div id="view-3" class="view tab" data-page="index-3">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="center sliding" style="left: 642.5px;">Games</div>
+                </div>
+            </div>
+            <div class="pages navbar-through">
+                <div data-page="index-3" class="page">
+                    <div class="page-content">
+                        <div class="content-block-title">
+                            <h1>Games</h1>
+                        </div>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <a class="swiper-slide" href="detail.html?id=1019220132">
+                                    <img data-src="https://topstore.vip/slide/1019220132.jpg" class="swiper-lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                            </div>
+
+                            <div class="swiper-pagination color-white"></div>
+                        </div>
+                        <div class="content-block">
+                            <p>
+                                <div style="text-align:center; margin-top:-18px;">
+                                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                                    <!-- 下载页广告 -->
+                                    <ins class="adsbygoogle" style="display:inline-block;width:350px;height:90px" data-ad-client="ca-pub-" data-ad-slot="7569482265"></ins>
+                                    <script>
+                                        (adsbygoogle = window.adsbygoogle || []).push({});
+                                    </script>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="content-block-title">
+                            <h2>Tweaked Games</h2>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Tweaked Games:</div>
+                            <div class="card-content lazy lazy-fadeIn">
+                                <div class="list-block media-list">
+                                    <ul id="TweakedGames">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <span></span>
+                                <a href="type.html?type=Tweaked Games" style="margin-right: 20px;">more...</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="content-block-title">
+                            <h2>Paid And Other Games</h2>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Paid And Other Games:</div>
+                            <div class="card-content lazy lazy-fadeIn">
+                                <div class="list-block media-list">
+                                    <ul id="PaidAndOtherGames">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <span></span>
+                                <a href="type.html?type=Paid And Other Games" style="margin-right: 20px;">more...</a>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="view-4" class="view tab" data-page="index-4">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="center sliding" style="left: 642.5px;">Update</div>
+                </div>
+            </div>
+            <div class="pages navbar-fixed">
+                <div data-page="index-4" class="page">
+                    <div class="pages navbar-through">
+                        <div class="page-content">
+                            <div data-page="home" class="page">
+                                <div class="page-content">
+                                    <div class="content-block">
+                                        <p>
+                                            <div style="text-align:center; margin-top:-18px;">
+                                                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                                                <!-- 下载页广告 -->
+                                                <ins class="adsbygoogle" style="display:inline-block;width:350px;height:90px" data-ad-client="ca-pub-" data-ad-slot="7569482265"></ins>
+                                                <script>
+                                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                                </script>
+                                            </div>
+                                        </p>
+                                    </div>
+                                    <div class="content-block-title">
+                                        <h2>Latest Updated</h2>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-content lazy lazy-fadeIn">
+                                            <div class="list-block media-list">
+                                                <ul id="Latest">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="view-5" class="view tab" data-page="index-5">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="center sliding" style="left: 642.5px;">Search</div>
+                </div>
+            </div>
+            <div class="pages navbar-fixed">
+                <div data-page="index-5" class="page">
+
+                    <div class="pages navbar-through">
+                        <div class="page-content">
+                            <div class="content-block">
+                                <p>
+                                    <div style="text-align:center; margin-top:-18px;">
+                                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                                        <!-- 下载页广告 -->
+                                        <ins class="adsbygoogle" style="display:inline-block;width:350px;height:90px" data-ad-client="ca-pub-" data-ad-slot="7569482265"></ins>
+                                        <script>
+                                            (adsbygoogle = window.adsbygoogle || []).push({});
+                                        </script>
+                                    </div>
+                                </p>
+                            </div>
+                            <div data-page="home" class="page">
+                                <!-- Search bar -->
+                                <form data-search-list=".list-block-search" data-search-in=".app-title" class="searchbar searchbar-init searchbar-active" style="padding:0px;">
+                                    <div class="searchbar-input">
+                                        <input type="search" style="background-color:#e8e8ea;" placeholder="Search">
+                                        <a href="#" class="searchbar-clear"></a>
+                                    </div><a href="#" class="searchbar-cancel">Cancel</a>
+                                </form>
+
+                                <!-- Search bar overlay -->
+                                <div class="searchbar-overlay"></div>
+
+                                <div class="page-content">
+                                    <!-- This block will be displayed if nothing found -->
+                                    <div class="content-block searchbar-not-found">
+                                        <div class="content-block-inner">Nothing found</div>
+                                    </div>
+
+                                    <!-- This block will be displayed if anything found, and this list block is used a searbar target -->
+                                    <div class="list-block list-block-search searchbar-found media-list lazy lazy-fadeIn">
+                                        <ul id="apps">
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Tabbar-->
+        <div class="toolbar tabbar tabbar-labels">
+            <div class="toolbar-inner">
+                <a href="#view-1" class="tab-link active">
+                    <i class="icon icon-today"></i>
+                    <span class="tabbar-label">TopApps</span></a>
+                <a href="#view-2" class="tab-link">
+                    <i class="icon icon-apps"></i>
+                    <span class="tabbar-label">Apps</span>
+                </a>
+                <a href="#view-3" class="tab-link">
+                    <i class="icon icon-games">
+                </i><span class="tabbar-label">Games</span>
+                </a>
+                <a href="#view-4" class="tab-link">
+                    <i class="icon icon-update"></i>
+                    <span class="tabbar-label">Updated</span></a>
+                <a href="#view-5" class="tab-link">
+                    <i class="icon icon-search"></i>
+                    <span class="tabbar-label">Search</span></a>
+            </div>
+        </div>
+    </div>
+    <script src="jquery/jquery.min.js"></script>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        function appDownload() {
+            gtag('config', 'UA-');
+            gtag('event', 'appDownload', {
+                'event_category': 'app',
+                'event_label': document.getElementById("name").innerText
+            });
+        }
+    </script>
+</body>
+
+</html>
