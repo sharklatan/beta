@@ -10,6 +10,7 @@ var mySwiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination'
     })
     // 为便于使用，自定义DOM库名字为$$
+    // Para facilitar su uso, el nombre de la biblioteca DOM personalizada es $$
 var $$ = Dom7;
 var mySwiper = new Swiper('.swiper-container', {
         preloadImages: true,
@@ -17,29 +18,37 @@ var mySwiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination'
     })
     // 添加视图
+    // Añadir vista
 var view1 = myApp.addView('#view-1', {
     // 让这个视图支持动态导航栏
+    // Deje que esta vista soporte la barra de navegación dinámica
     dynamicNavbar: true
 });
 var view2 = myApp.addView('#view-2', {
     // 让这个视图支持动态导航栏
+    // Deje que esta vista soporte la barra de navegación dinámica
     dynamicNavbar: true
 });
 var view3 = myApp.addView('#view-3', {
     // 让这个视图支持动态导航栏
+    // Deje que esta vista soporte la barra de navegación dinámica
     dynamicNavbar: true
 });
 var view4 = myApp.addView('#view-4', {
     // 让这个视图支持动态导航栏
+    // Deje que esta vista soporte la barra de navegación dinámica
     dynamicNavbar: true
 });
 var view4 = myApp.addView('#view-5', {
     // 让这个视图支持动态导航栏
+    // Deje que esta vista soporte la barra de navegación dinámica
     dynamicNavbar: true
 });
 // 下面代码是给“关于”页面使用的（关于页面加载完毕后触发）
+// El siguiente código es para la página "Acerca de" (se activa después de cargar la página)
 
 // 方式1：通过页面回调 (推荐):
+// Método 1: pasar la devolución de llamada de la página (recomendado):
 myApp.onPageInit('type', function(page) {
 
         var category = page.query.type;
@@ -67,11 +76,14 @@ myApp.onPageInit('type', function(page) {
     })
     /*
     // 方式2：通过pageInit事件处理所有页面
+    // Método 2: procesar todas las páginas a través del evento pageInit
     $$(document).on('pageInit', function (e) {
         // 获取页面数据
+        // Obtener datos de la página
         var page = e.detail.page;
 
         //判断是否是“关于”页面
+        //Determine si es la página "Acerca de"
         if (page.name === 'type') {
             myApp.alert('"关于"页面加载完毕2!');
         }
