@@ -52,7 +52,7 @@ var view4 = myApp.addView('#view-5', {
 myApp.onPageInit('type', function(page) {
 
         var category = page.query.type;
-        var server = "https://topstore.vip/GetBrief/AppListByCategory.action?category="
+        var server = "https://ipas.sharklatan.com/GetBrief/AppListByCategory.action?category="
         $.ajax({
             type: 'GET',
             url: server + category,
