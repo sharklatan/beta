@@ -154,11 +154,11 @@ myApp.onPageInit('detail', function(page) {
 })
 
 function addDetail(data) {
-    document.getElementById("avatar").src = "https://topstore.vip/image/" + data.id + ".png"
-    document.getElementById("preview").src = "https://topstore.vip/preview/" + data.id + ".png"
+    document.getElementById("avatar").src = "https://api.sharklatan.com/image/" + data.id + ".png"
+    document.getElementById("preview").src = "https://api.sharklatan.com/preview/" + data.id + ".png"
     document.getElementById("name").innerHTML = data.name
     document.getElementById("subtitle").innerHTML = data.subtitle
-    document.getElementById("downloadLink").href = "itms-services://?action=download-manifest&url=https://topstore.vip/plist/" + data.id + ".plist"
+    document.getElementById("downloadLink").href = "itms-services://?action=download-manifest&url=https://ipas.sharklatan.com/plist/" + data.id + ".plist"
     document.getElementById("Size").innerHTML = data.filesize
     var predata = data.description.substring(0, 20);
     var postdata = data.description.substr(20);
