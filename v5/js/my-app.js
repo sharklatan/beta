@@ -106,7 +106,7 @@ $$(document).on('pageInit', '.page[data-page="index-4"]', function(e) {
 function addRow(id, name, developer, subtitle) {
     var str = "                                    <li class=\"item-content\">\n" +
         "                                        <div class=\"item-media\">\n" +
-        "                                            <img src=\"https://topstore.vip/image/" + id + ".png\" width=\"44\">\n" +
+        "                                            <img src=\"https://api.sharklatan.com/image/" + id + ".png\" width=\"44\">\n" +
         "                                        </div>\n" +
         "                                        <div class=\"item-inner\">\n" +
         "                                            <div class=\"item-title-row\">\n" +
@@ -122,7 +122,7 @@ function addRow(id, name, developer, subtitle) {
 }
 myApp.onPageInit('detail', function(page) {
     var id = page.query.id;
-    var server = "https://topstore.vip/GetDetail/AppDetail.action?id="
+    var server = "https://api.sharklatan.com/GetDetail/AppDetail.action?id="
     $.ajax({
         type: 'GET',
         url: server + id,
@@ -137,7 +137,7 @@ myApp.onPageInit('detail', function(page) {
         }
     });
     var id = page.query.id;
-    var server = "https://topstore.vip/GetCategory/AppCategory.action?id="
+    var server = "https://api.sharklatan.com/GetCategory/AppCategory.action?id="
     $.ajax({
         type: 'GET',
         url: server + id,
