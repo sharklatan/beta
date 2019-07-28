@@ -52,7 +52,7 @@ var view4 = myApp.addView('#view-5', {
 myApp.onPageInit('type', function(page) {
 
         var category = page.query.type;
-        var server = "https://ipas.sharklatan.com/GetBrief/AppListByCategory.action?category="
+        var server = "https://topstore.vip/GetBrief/AppListByCategory.action?category="
         $.ajax({
             type: 'GET',
             url: server + category,
@@ -106,7 +106,7 @@ $$(document).on('pageInit', '.page[data-page="index-4"]', function(e) {
 function addRow(id, name, developer, subtitle) {
     var str = "                                    <li class=\"item-content\">\n" +
         "                                        <div class=\"item-media\">\n" +
-        "                                            <img src=\"https://api.sharklatan.com/image/" + id + ".png\" width=\"44\">\n" +
+        "                                            <img src=\"https://topstore.vip/image/" + id + ".png\" width=\"44\">\n" +
         "                                        </div>\n" +
         "                                        <div class=\"item-inner\">\n" +
         "                                            <div class=\"item-title-row\">\n" +
@@ -122,7 +122,7 @@ function addRow(id, name, developer, subtitle) {
 }
 myApp.onPageInit('detail', function(page) {
     var id = page.query.id;
-    var server = "https://api.sharklatan.com/GetDetail/AppDetail.action?id="
+    var server = "https://topstore.vip/GetDetail/AppDetail.action?id="
     $.ajax({
         type: 'GET',
         url: server + id,
@@ -137,7 +137,7 @@ myApp.onPageInit('detail', function(page) {
         }
     });
     var id = page.query.id;
-    var server = "https://api.sharklatan.com/GetCategory/AppCategory.action?id="
+    var server = "https://topstore.vip/GetCategory/AppCategory.action?id="
     $.ajax({
         type: 'GET',
         url: server + id,
@@ -154,11 +154,11 @@ myApp.onPageInit('detail', function(page) {
 })
 
 function addDetail(data) {
-    document.getElementById("avatar").src = "https://api.sharklatan.com/image/" + data.id + ".png"
-    document.getElementById("preview").src = "https://api.sharklatan.com/preview/" + data.id + ".png"
+    document.getElementById("avatar").src = "https://topstore.vip/image/" + data.id + ".png"
+    document.getElementById("preview").src = "https://topstore.vip/preview/" + data.id + ".png"
     document.getElementById("name").innerHTML = data.name
     document.getElementById("subtitle").innerHTML = data.subtitle
-    document.getElementById("downloadLink").href = "itms-services://?action=download-manifest&url=https://ipas.sharklatan.com/plist/" + data.id + ".plist"
+    document.getElementById("downloadLink").href = "itms-services://?action=download-manifest&url=https://topstore.vip/plist/" + data.id + ".plist"
     document.getElementById("Size").innerHTML = data.filesize
     var predata = data.description.substring(0, 20);
     var postdata = data.description.substr(20);
