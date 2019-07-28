@@ -163,7 +163,7 @@ function addRow(id, name, developer, subtitle, icon) {
     var html = "";
     var str = "                                    <li class=\"item-content\">\n" +
         "                                        <div class=\"item-media\">\n" +
-        "                                            <img class=\"lazy lazy-fadeIn\" style=\"width:70px;border-radius:20px;\" src=\"https://topstore.vip/image/loading.gif\" data-src=\"" + icon + "\" width=\"44\">\n" +
+        "                                            <img class=\"lazy lazy-fadeIn\" style=\"width:70px;border-radius:20px;\" src=\"https://img.sharklatan.com/load.gif\" data-src=\"" + icon + "\" width=\"44\">\n" +
         "                                        </div>\n" +
         "                                        <div class=\"item-inner\">\n" +
         "                                            <div class=\"item-title-row\">\n" +
