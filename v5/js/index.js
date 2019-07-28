@@ -86,7 +86,7 @@ function init(data){
 
  */
 function loadSearch() {
-    var server ="https://api.sharklatan.com/GetBrief/AllApps.action"
+    var server ="https://topstore.vip/GetBrief/AllApps.action"
     $.ajax({
         type: 'GET',
         url: server,
@@ -104,7 +104,7 @@ function loadSearch() {
     });
 }
 function loadLatest() {
-    var server ="https://api.sharklatan.com/GetBrief/Latest.action"
+    var server ="https://topstore.vip/GetBrief/Latest.action"
     $.ajax({
         type: 'GET',
         url: server,
@@ -127,7 +127,7 @@ function loadLatest() {
 
 }
 function load(category){
-    var server ="https://api.sharklatan.com/GetBrief/AppListByCategoryLimit.action?category="
+    var server ="https://topstore.vip/GetBrief/AppListByCategoryLimit.action?category="
         $.ajax({
             type: 'GET',
             url: server+category,
@@ -159,7 +159,7 @@ function addRow(id,name,developer,subtitle){
      var html = "";
     var str="                                    <li class=\"item-content\">\n" +
         "                                        <div class=\"item-media\">\n" +
-        "                                            <img class=\"lazy lazy-fadeIn\" src=\"https://api.sharklatan.com/image/loading.gif\" data-src=\"https://api.sharklatan.com/image/"+id+".png\" width=\"44\">\n" +
+        "                                            <img class=\"lazy lazy-fadeIn\" src=\"https://topstore.vip/image/loading.gif\" data-src=\"https://topstore.vip/image/"+id+".png\" width=\"44\">\n" +
         "                                        </div>\n" +
         "                                        <div class=\"item-inner\">\n" +
         "                                            <div class=\"item-title-row\">\n" +
